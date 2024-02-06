@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E3 Resurrection Survey Form</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
+    <main>
+        <h1 id="title">E3 Resurrection Survey Form</h1>
+        <p id="description">Fill out this form to help bringing E3 (Electronic Entertainment Expo) back from the dead</p>
+        <section>
+            <form id="survey-form">
+                <fieldset>
+                    <label id="name-label" for="name">Name  
+                        <input id="name" name="name" type="text" required placeholder="Enter your name"/>
+                    </label>
+                    <label id="email-label" for="email">Email  
+                        <input id="email" name="email" type="email" required placeholder="Enter your email"/>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label id="number-label" for="number">Number of attended E3s  
+                        <input id="number" name="e3s-attended" type="number" min="0" max="26" placeholder="Enter the number of E3s you have attended"/>
+                    </label>
+                    <label for="dropdown">Which one was your favorite conference at E3?
+                        <select id="dropdown" name="favorite-conference">
+                            <option value="">Select an option</option>
+                            <option value="bandai-namco">Bandai Namco Entertainment</option>
+                            <option value="bethesda">Bethesda Softworks</option>
+                            <option value="capcom">Capcom</option>
+                            <option value="ea">Electronic Arts</option>
+                            <option value="microsoft">Microsoft</option>
+                            <option value="nintendo">Nintendo</option>
+                            <option value="sony">Sony</option>
+                            <option value="square-enix">Square Enix</option>
+                            <option value="ubisoft">Ubisoft</option>
+                        </select>
+                    </label>
+                    <p>What modality do you prefer for the E3?</p>
+                    <label id="in-person-label" for="in-person">
+                        <input id="in-person" name="e3-modality" type="radio" value="in-person" checked/> In Person
+                    </label>
+                    <label id="online-label" for="online">
+                        <input id="online" name="e3-modality" type="radio" value="online"/> Online
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <p>What other gaming expos/conventions have you heard of?</p>
+                    <label id="gamescom-label" for="gamescom">
+                        <input id="gamescom" name="other-expos" type="checkbox" value="gamescom"/> Gamescom
+                    </label>
+                    <label id="summer-game-fest-label" for="summer-game-fest">
+                        <input id="summer-game-fest" name="other-expos" type="checkbox" value="summer-game-fest"/> Summer Game Fest
+                    </label>
+                    <label id="insomnia-gaming-festival-label" for="insomnia-gaming-festival">
+                        <input id="insomnia-gaming-festival" name="other-expos" type="checkbox" value="insomnia-gaming-festival"/> Insomnia Gaming Festival
+                    </label>
+                    <label id="egx-label" for="egx">
+                        <input id="egx" name="other-expos" type="checkbox" value="egx"/> Eurogamer Expo (EGX)
+                    </label>
+                    <label id="pax-label" for="pax">
+                        <input id="pax" name="other-expos" type="checkbox" value="pax"/> Penny Arcade Expo (PAX)
+                    </label>
+                    <label id="tokyo-game-show-label" for="tokyo-game-show">
+                        <input id="tokyo-game-show" name="other-expos" type="checkbox" value="tokyo-game-show"/> Tokyo Game Show
+                    </label>
+                    <label id="brasil-game-show-label" for="brasil-game-show">
+                        <input id="brasil-game-show" name="other-expos" type="checkbox" value="brasil-game-show"/> Brasil Game Show
+                    </label>
+                    <label id="other-label" for="other">
+                        <input id="other" name="other-expos" type="checkbox" value="other"/> Other
+                    </label>
+                    <label for="thoughts">What are your thoughts on Geoff Keighley and Summer Game Fest?
+                        <textarea id="thoughts" name="thoughts"></textarea>
+                    </label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit"/>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
