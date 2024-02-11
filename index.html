@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E3 Resurrection Survey Form</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="./public/styles/styles.css"/>
 </head>
 <body>
     <main>
         <h1 id="title">E3 Resurrection Survey Form</h1>
-        <p id="description">Fill out this form to help bringing E3 (Electronic Entertainment Expo) back from the dead</p>
+        <!-- IMAGE ATTRIBUTION: https://commons.wikimedia.org/wiki/File:E3_new_logo.svg
+        BOMBA, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons -->
+        <img src="./public/images/E3_new_logo.svg" alt="e3-logo" id="e3-logo"/>
+        <p id="description">Fill out this form to help bringing E3 (Electronic Entertainment Expo) back from the dead &#128128;</p>
         <section>
-            <form id="survey-form">
+            <form id="survey-form" class="survey-form">
                 <fieldset>
                     <label id="name-label" for="name">Name  
                         <input id="name" name="name" type="text" required placeholder="Enter your name"/>
@@ -40,40 +43,40 @@
                     </label>
                     <p>What modality do you prefer for the E3?</p>
                     <label id="in-person-label" for="in-person">
-                        <input id="in-person" name="e3-modality" type="radio" value="in-person" checked/> In Person
+                        <input id="in-person" name="e3-modality" type="radio" value="in-person" checked class="inline"/> In Person
                     </label>
                     <label id="online-label" for="online">
-                        <input id="online" name="e3-modality" type="radio" value="online"/> Online
+                        <input id="online" name="e3-modality" type="radio" value="online" class="inline"/> Online
                     </label>
                 </fieldset>
                 <fieldset>
                     <p>What other gaming expos/conventions have you heard of?</p>
                     <label id="gamescom-label" for="gamescom">
-                        <input id="gamescom" name="other-expos" type="checkbox" value="gamescom"/> Gamescom
+                        <input id="gamescom" name="other-expos" type="checkbox" value="gamescom" class="inline"/> Gamescom
                     </label>
                     <label id="summer-game-fest-label" for="summer-game-fest">
-                        <input id="summer-game-fest" name="other-expos" type="checkbox" value="summer-game-fest"/> Summer Game Fest
+                        <input id="summer-game-fest" name="other-expos" type="checkbox" value="summer-game-fest" class="inline"/> Summer Game Fest
                     </label>
                     <label id="insomnia-gaming-festival-label" for="insomnia-gaming-festival">
-                        <input id="insomnia-gaming-festival" name="other-expos" type="checkbox" value="insomnia-gaming-festival"/> Insomnia Gaming Festival
+                        <input id="insomnia-gaming-festival" name="other-expos" type="checkbox" value="insomnia-gaming-festival" class="inline"/> Insomnia Gaming Festival
                     </label>
                     <label id="egx-label" for="egx">
-                        <input id="egx" name="other-expos" type="checkbox" value="egx"/> Eurogamer Expo (EGX)
+                        <input id="egx" name="other-expos" type="checkbox" value="egx" class="inline"/> Eurogamer Expo (EGX)
                     </label>
                     <label id="pax-label" for="pax">
-                        <input id="pax" name="other-expos" type="checkbox" value="pax"/> Penny Arcade Expo (PAX)
+                        <input id="pax" name="other-expos" type="checkbox" value="pax" class="inline"/> Penny Arcade Expo (PAX)
                     </label>
                     <label id="tokyo-game-show-label" for="tokyo-game-show">
-                        <input id="tokyo-game-show" name="other-expos" type="checkbox" value="tokyo-game-show"/> Tokyo Game Show
+                        <input id="tokyo-game-show" name="other-expos" type="checkbox" value="tokyo-game-show" class="inline"/> Tokyo Game Show
                     </label>
                     <label id="brasil-game-show-label" for="brasil-game-show">
-                        <input id="brasil-game-show" name="other-expos" type="checkbox" value="brasil-game-show"/> Brasil Game Show
+                        <input id="brasil-game-show" name="other-expos" type="checkbox" value="brasil-game-show" class="inline"/> Brasil Game Show
                     </label>
                     <label id="other-label" for="other">
-                        <input id="other" name="other-expos" type="checkbox" value="other"/> Other
+                        <input id="other" name="other-expos" type="checkbox" value="other" class="inline"/> Other
                     </label>
                     <label for="thoughts">What are your thoughts on Geoff Keighley and Summer Game Fest?
-                        <textarea id="thoughts" name="thoughts"></textarea>
+                        <textarea id="thoughts" name="thoughts" placeholder="I think Geoff Keighley and Summer Game Fest are..."></textarea>
                     </label>
                 </fieldset>
                 <input id="submit" type="submit" value="Submit"/>

@@ -1,0 +1,86 @@
+body{
+    background-image: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), 
+        /* IMAGE ATTRIBUTION: https://commons.wikimedia.org/wiki/File:E3_2012_(West_Hall,_Convention_Center)_(7351570362).jpg
+        Sergey Galyonkin from Raleigh, USA, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons */
+        url("../images/E3_2012_(West_Hall,_Convention_Center)_(7351570362).jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#e3-logo{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-block-size: 4em;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.survey-form{
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 600px;
+    min-width: 200px;
+    margin: 2em auto;
+    padding: 1.5em 1.25em;
+    border-radius: 0.25em;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+fieldset{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0.5em;
+}
+
+fieldset:last-of-type{
+    border-bottom: unset;
+}
+
+form p{
+    margin-top: 0;
+    text-align: unset;
+}
+
+form label{
+    display: block;
+    margin: 1em 0;
+}
+
+form label:first-of-type{
+    margin: 0;
+}
+
+input, textarea, select{
+    width: 100%;
+    margin-top: 1em;
+    min-height: 2em;
+    font-family: inherit;
+}
+
+textarea{
+    height: 14vh;
+}
+
+.inline{
+    width: unset;
+    display: inline;
+    margin: unset;
+    vertical-align: middle;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 50%;
+    margin: auto auto 1em auto;
+    background-color: white;
+    border: none;
+    border-radius: 0.25em;
+    font-size: 1em;
+    font-weight: bold;
+}
