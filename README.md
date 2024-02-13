@@ -1,6 +1,6 @@
 # E3 Resurrection Survey Form
 
-This is a basic HTML/CSS project that contains a Survey Form to ask users what do they think about bringing E3 (Electronic Entertainment Expo) back from the dead.
+This is a basic HTML/CSS project that contains a Survey Form to ask users what do they think about bringing E3 (Electronic Entertainment Expo) back from the dead. [Click here to visit the survey form](https://victor749.github.io/e3-resurrection-survey-form/).
 
 ## Images Attributions
 
